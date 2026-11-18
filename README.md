@@ -3,7 +3,6 @@
 - **Intern Name:** Manuvarun Chekrapu
 - **Intern ID:** SWX-2026-002655
 - **Domain:** Bioinformatics Internship
-- **Task Objective:** Perform data cleaning, handle missing values, extract fundamental structural and assembly statistics, and generate scientific visualizations with critical interpretations from biological datasets.
 
 ---
 
@@ -19,7 +18,14 @@
 
 ---
 
-## 🔬 Technical Specifications & Assembly Statistics
+## 🧹 Task 2: Data Cleaning & Basic Analysis
+- **Objective:** Perform data cleaning, handle missing values, and extract fundamental structural and assembly statistics from biological datasets.
+- **Data Cleaning Workflow (`Data Cleaning.ipynb`):**
+  - Loaded and inspected `data_summary.tsv` across GenBank and RefSeq assembly records.
+  - Handled missing metadata values by imputing `Organism Common Name` (`K-12 substr. MG1655`).
+  - Verified structural consistency and generated an initial comparative bar chart (`Bar_Plot.png`).
+
+### Technical Specifications & Assembly Statistics
 
 | Metric Parameter | Value / Description |
 | :--- | :--- |
@@ -34,6 +40,7 @@
 ---
 
 ## 📈 Task 3: Visualization & Scientific Interpretation
+- **Objective:** Generate publication-grade scientific visualizations (`SWYNEX-Visualization & Interpretation.ipynb`) and evaluate what the visual results do and do not prove.
 
 ### 1. Annotated Gene Count Comparison (`1_Gene_Count_Comparison.png`)
 - **What it displays:** Side-by-side comparison of total annotated genes between GenBank (`GCA_000005845.2`) and NCBI RefSeq (`GCF_000005845.2`).
@@ -54,12 +61,12 @@
 
 ## 🛠️ Repository Contents
 
-### Task 2: Data Cleaning & Basic Analysis
+### Task 2 Files
 - **`Data Cleaning.ipynb`**: Google Colab notebook featuring data loading, inspection, missing value handling (`Organism Common Name` cleaning), and summary statistics.
 - **`data_summary.tsv`**: Raw dataset containing GenBank and RefSeq assembly summaries.
 - **`Bar_Plot.png`**: Initial visualization comparing total gene count across assembly sources (GenBank vs. RefSeq).
 
-### Task 3: Visualization & Interpretation
+### Task 3 Files
 - **`SWYNEX-Visualization & Interpretation.ipynb`**: Google Colab notebook generating publication-grade (`300 DPI`) visualizations using `pandas`, `matplotlib`, and `seaborn`.
 - **`1_Gene_Count_Comparison.png`**: Bar plot comparing total annotated gene counts across GenBank and RefSeq.
 - **`2_Assembly_Contiguity.png`**: Grouped bar plot comparing Total Genome Size vs. Contig N50 (`4.64 Mb`).
